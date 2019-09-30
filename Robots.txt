@@ -1,0 +1,4 @@
+#Levchenko
+User-agent: *
+Allow: /
+Sitemap: https://seo.belstu.by/Levchenko/site/sitemap.xml

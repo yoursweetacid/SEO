@@ -1,0 +1,11 @@
+DirectoryIndex stati-pro-dizajn-interfejsov.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.seo.belstu.by
+RewriteRule (.*) https://seo.belstu.by/Levchenko/site/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 https://seo.belstu.by/Levchenko/site/404.html
